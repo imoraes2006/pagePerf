@@ -15,7 +15,7 @@ This example demonstrates how to setup a lambda function to transcribe your audi
 
 ## Use Cases
 
-- Transcribe your audio file (voice messages, phone recordings) to text using AWS Transcribe
+- Creates a web page that has output from a web page test of a configured URI
 
 ## Setup
 
