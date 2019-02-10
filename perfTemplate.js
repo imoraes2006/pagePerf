@@ -33,7 +33,7 @@ module.exports = (obj) => {
                 <li>At ${obj.timeToInteractive} the page is displayed and able to consistently respond to user input</li>
                 <li>As a note, tags on the page are making <b>${obj.thirdPartyCallsCtr}</b> calls to other (non-Audible) web sites while the page is being loaded for the first time. If you want even more details on the third party tags on your site, you know who to contact :)</li>
                 </ul></p> 
-              All the detailed data and links are below and can be used in conjunction with other data you are already collecting to effect performance changes. I'm sure your engineering buddies will be glad to help you make your page faster. </div>    
+              All the detailed data and links are below and can be used in conjunction with other data you are already collecting to both track and effect performance changes. I'm sure your engineering buddies will be glad to help you make your page faster. </div>    
               <h2>Details</h2>
               <table>
                 <tr>

@@ -20,7 +20,7 @@ provider:
 
 functions:
   getperf:
-    handler: handler.getperf
+    handler: driver.getperf
     environment:
       BUCKET: ${self:custom.bucket}
 
