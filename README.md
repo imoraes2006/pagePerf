@@ -15,7 +15,7 @@ Runs a performance check using Lambda for each web page configured and pulls fro
 
 ## Use Cases
 
-- Transcribe your audio file (voice messages, phone recordings) to text using AWS Transcribe
+- Runs a page performance check for a web page and produces a report that gets stored in S3
 
 ## Setup
 
@@ -23,6 +23,8 @@ Runs a performance check using Lambda for each web page configured and pulls fro
 `bucket: <S3 bucket name>`
 
 - Make sure region is defined correctly
+
+- Enable permissions to allow lambda function to store report in S3 bucket
 
 ## Deploy
 
@@ -36,4 +38,4 @@ serverless deploy
 ## Usage
 
 - tester
-- html file describing performance will be created in the configured S3 bucket
+- Report (html version) of performance check is stored in the configured S3 bucket
