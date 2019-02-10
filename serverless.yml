@@ -1,0 +1,26 @@
+service: audible-performance
+
+frameworkVersion: ">=1.1.0"
+
+custom:
+  bucket: audperf
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  timeout: 360
+  stage: dev
+  region: us-east-1
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - s3:PutObject
+      Resource: "arn:aws:s3:::${self:custom.bucket}/*"
+
+
+functions:
+  getperf:
+    handler: handler.getperf
+    environment:
+      BUCKET: ${self:custom.bucket}
+
