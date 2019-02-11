@@ -48,6 +48,6 @@ serverless deploy
 ## Usage
 In order to execute manually simply run
 ```bash
-- ./tester
+./tester
 ```
 - Report (html version) of performance check is created in the configured S3 bucket
