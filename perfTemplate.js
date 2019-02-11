@@ -17,12 +17,14 @@ module.exports = (obj) => {
                 }
                 tr:nth-child(even) {
                   background-color: #dddddd;
+                }
             </style>
             <body>
               <h2>Quick Read</h2>
-              <div><p>Hey there! I ran a test of the page load speed of the anon home page of your website ${obj.targetSite}. <br/><br/>How did I do this? I acted as an anon user and ran some of my own checks and also got some real data from actual users data from Google's public data warehouse. </p>
+              <div><p>Hey there! I ran a test of the page load speed of the anon home page of your website ${obj.targetSite}. <br/><br/>How did I do this? I acted as an anon user and ran some of my own checks and also got some real data from actual users from Google's public data warehouse. </p>
               <p>    
-              Remember page load speed should consider the user's entire experience and not just focus on a single moment.  Thus, it can't be reflected in a single number so I wanted to give you multiple data points to help you form an opinion on how fast your page loads for a user.</p>
+              Remember page load speed should consider the user's entire experience and not just focus on a single moment.  Thus, it can't be reflected in a single number so I wanted to give you multiple data points to help you form an opinion on how fast your page loads for a user.
+              This data should be used along with what you get from other tools.</p>
            
               <p>So, let's start with some highlights. 
 

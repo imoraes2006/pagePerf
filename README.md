@@ -13,7 +13,7 @@ authorAvatar: 'https://avatars0.githubusercontent.com/u/2223362?v=4&s=140'
 
 Tool that runs a performance check each web page configured (e.g., anon Home Page for global web sites--US, EU and APAC sites).  It collects both synthetic and real user data on the page's performance. The check results in the creation of a report (HTML version) for that page that gets stored in a configured S3 bucket. The name of the report uses a date time stamp and domain name.  
 
-The report provides a summary that can be consumed by business and marketing partners.   The tool will data such as: total size of page, time for processing JS during page load, presents sample of real user data of when content is first displayed, first time meaningful content displayed, find any large files being downloaded, and explicitly list third party calls and their latency during page load.
+The report provides a summary that can be consumed by business and marketing partners.   The tool will provide data such as: total size of page, time for processing JS during page load, presents sample of real user data of when content is first displayed (something happening on the screen), first time meaningful content displayed (something useful shown on the screen), find any large files being downloaded, and explicitly list third party calls and their latency during page load.  It focuses on page load time as well as responsiveness of the application.
 
 Some advantages of this tool:
 - Report can be useful for our business and marketing partners.  It provides performance explanations in an understandable format.

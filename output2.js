@@ -91,7 +91,11 @@ function getThirdPartyCalls(obj) {
     const val = value.url;
     const firstCut = val.indexOf('.');
     const secondCut = val.indexOf(consts.AMAZON_DOMAIN, firstCut);
-    if (secondCut < 0) {
+    const secondCutA = val.indexOf(consts.AUDIBLE_CA, firstCut);
+    const secondCutB = val.indexOf(consts.AUDIBLE_CO, firstCut);
+    const secondCutC = val.indexOf(consts.AUDIBLE_JP, firstCut);
+    const secondCutD = val.indexOf(consts.AUDIBLE_DE, firstCut);
+    if ((secondCut < 0) && (secondCutA < 0) && (secondCutB < 0) && (secondCutC < 0) && (secondCutD < 0)) {
       const thirdCut = val.indexOf(consts.AUDIBLE_DOMAIN, firstCut);
       if (thirdCut < 0) {
         const fourthCut = val.indexOf(consts.DATA_URI, firstCut);
