@@ -16,9 +16,11 @@ Tool that runs a performance check each web page configured (e.g., anon Home Pag
 The report provides a summary that can be consumed by business and marketing partners.   The tool will provide data such as: total size of page, time for processing JS during page load, presents sample of real user data of when content is first displayed (something happening on the screen), first time meaningful content displayed (something useful shown on the screen), find any large files being downloaded, and explicitly list third party calls and their latency during page load.  It focuses on page load time as well as responsiveness of the application.
 
 Some advantages of this tool:
-- Report can be useful for our business and marketing partners.  It provides performance explanations in an understandable format.
-- Complements existing tools and metrics.  It provides performance data not provided by team's current toolset.
-- Maintenance and licensing costs are negligible.  There is no licensing cost and no hosts to maintain as serverless will be used
+•	Collects both test data (synthetic) and real user data 
+•	Complements existing tools and metrics. It provides performance data not provided by team's current toolset
+•	Report provides useful performance insight for our technical, business and marketing partners in an understandable format
+•	Maintenance and licensing costs are negligible. There is no licensing cost and no hosts to maintain as tool developed in-house and requires no servers to run (limited maintenance and operating costs) 
+
 
 
 ## Use Cases
@@ -46,6 +48,6 @@ serverless deploy
 ## Usage
 In order to execute manually simply run
 ```bash
-- tester
-```bash
+- ./tester
+```
 - Report (html version) of performance check is created in the configured S3 bucket
