@@ -46,8 +46,12 @@ serverless deploy
 
 
 ## Usage
+
+- Note that this service runs as a scheduled event on the 12th of each month
+
+- Check configured S3 bucket for report (html version) of performance check 
+
 In order to execute manually simply run
 ```bash
 ./tester
 ```
-- Report (html version) of performance check is created in the configured S3 bucket
